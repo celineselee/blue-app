@@ -10,6 +10,7 @@ import UIKit
 import NaturalLanguageUnderstandingV1
 
 class ViewController: UIViewController {
+    
     @IBAction func checkButton(_ sender: Any) {
 //        NSLog(textField.text!)
         
@@ -21,39 +22,34 @@ class ViewController: UIViewController {
         
         let params = Parameters(features: features, text: textField.text, html: nil, url: nil, clean: nil, xpath: nil, fallbackToRaw: nil, returnAnalyzedText: true, language: nil, limitTextCharacters: nil);
         
-        
           nls.analyze(parameters: params, success:{ results in
             self.printSentiment(sentimentResult: results.sentiment.unsafelyUnwrapped.document?.label as! String);});
-        
-//        nls.analyze(parameters: params, success:{ results in
-//            print(results.sentiment.unsafelyUnwrapped.document?.label);
-//        });
 
 //        nls.analyze(parameters: params, success:{ results in
 //            print("%@", results);
 //        });
     }
     
-    func printSentiment(sentimentResult: String) {
-        if sentimentResult == "negative" {
-            sadSentiment();
-        }
+        func printSentiment(sentimentResult: String) {
+            
+            print(sentimentResult)
+            
+            if sentimentResult == "negative" {
+                DispatchQueue.main.async { self.performSegue(withIdentifier: "segue1", sender: self)
+                }
+            }
         else {
-            happySentiment();
+            
+                DispatchQueue.main.async {                 self.performSegue(withIdentifier: "segue2", sender: self)
+                    }
+            }
         }
-    }
-    
-    func sadSentiment (){
-        print("Sad");
-    }
-    
-    func happySentiment (){
-        print("Happy");
-    }
     
     
+    @IBOutlet weak var textField: UITextView!
     
-    @IBOutlet weak var textField: UITextField!
+//    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

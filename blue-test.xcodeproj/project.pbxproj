@@ -42,6 +42,9 @@
 		94244062209E578100C5124A /* ToneAnalyzerV3.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9424403E209E476400C5124A /* ToneAnalyzerV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		94244063209E578100C5124A /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94244035209E476400C5124A /* VisualRecognitionV3.framework */; };
 		94244064209E578100C5124A /* VisualRecognitionV3.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 94244035209E476400C5124A /* VisualRecognitionV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94C9D3C0209EAFFE00A32995 /* newWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C9D3BF209EAFFE00A32995 /* newWindow.swift */; };
+		94C9D3C2209EBB0400A32995 /* sadScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C9D3C1209EBB0400A32995 /* sadScreen.swift */; };
+		94C9D3C4209EBC3300A32995 /* introClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C9D3C3209EBC3300A32995 /* introClass.swift */; };
 		94EA5B26209E393800E8973E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA5B25209E393800E8973E /* AppDelegate.swift */; };
 		94EA5B28209E393800E8973E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA5B27209E393800E8973E /* ViewController.swift */; };
 		94EA5B2B209E393800E8973E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94EA5B29209E393800E8973E /* Main.storyboard */; };
@@ -87,6 +90,9 @@
 		9424403E209E476400C5124A /* ToneAnalyzerV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToneAnalyzerV3.framework; path = Carthage/Build/iOS/ToneAnalyzerV3.framework; sourceTree = SOURCE_ROOT; };
 		9424403F209E476400C5124A /* NaturalLanguageClassifierV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguageClassifierV1.framework; path = Carthage/Build/iOS/NaturalLanguageClassifierV1.framework; sourceTree = SOURCE_ROOT; };
 		94244040209E476400C5124A /* LanguageTranslatorV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LanguageTranslatorV2.framework; path = Carthage/Build/iOS/LanguageTranslatorV2.framework; sourceTree = SOURCE_ROOT; };
+		94C9D3BF209EAFFE00A32995 /* newWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newWindow.swift; sourceTree = "<group>"; };
+		94C9D3C1209EBB0400A32995 /* sadScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sadScreen.swift; sourceTree = "<group>"; };
+		94C9D3C3209EBC3300A32995 /* introClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introClass.swift; sourceTree = "<group>"; };
 		94EA5B22209E393800E8973E /* blue-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "blue-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EA5B25209E393800E8973E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94EA5B27209E393800E8973E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +177,9 @@
 			children = (
 				94EA5B25209E393800E8973E /* AppDelegate.swift */,
 				94EA5B27209E393800E8973E /* ViewController.swift */,
+				94C9D3BF209EAFFE00A32995 /* newWindow.swift */,
+				94C9D3C1209EBB0400A32995 /* sadScreen.swift */,
+				94C9D3C3209EBC3300A32995 /* introClass.swift */,
 				94EA5B29209E393800E8973E /* Main.storyboard */,
 				94EA5B2C209E393800E8973E /* Assets.xcassets */,
 				94EA5B2E209E393800E8973E /* LaunchScreen.storyboard */,
@@ -254,6 +263,9 @@
 			files = (
 				94EA5B28209E393800E8973E /* ViewController.swift in Sources */,
 				94EA5B26209E393800E8973E /* AppDelegate.swift in Sources */,
+				94C9D3C4209EBC3300A32995 /* introClass.swift in Sources */,
+				94C9D3C2209EBB0400A32995 /* sadScreen.swift in Sources */,
+				94C9D3C0209EAFFE00A32995 /* newWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
