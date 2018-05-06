@@ -14,8 +14,6 @@ class ViewController: UIViewController {
     @IBAction func checkButton(_ sender: Any) {
 //        NSLog(textField.text!)
         
-        textLabel.text = textField.text
-        
         let nls = NaturalLanguageUnderstanding(username: "3c125aaa-6f52-4791-ba2f-214ebc8dd988", password: "ERdsqN5Sqdk6", version: "2018-03-16");
         
         let features = Features(concepts: nil, emotion: nil, entities: nil, keywords: nil, metadata: nil, relations: nil, semanticRoles: nil, sentiment: SentimentOptions(document: true, targets: nil), categories: nil);
@@ -35,24 +33,27 @@ class ViewController: UIViewController {
             print(sentimentResult)
             
             if sentimentResult == "negative" {
-                DispatchQueue.main.async { self.performSegue(withIdentifier: "segue1", sender: self)
+                DispatchQueue.main.async { self.performSegue(withIdentifier: "sadScreenSegue", sender: self)
                 }
             }
         else {
             
-                DispatchQueue.main.async {                 self.performSegue(withIdentifier: "segue2", sender: self)
+                DispatchQueue.main.async {                 self.performSegue(withIdentifier: "happyScreenSegue", sender: self)
                     }
             }
         }
     
     
-    @IBOutlet weak var textField: UITextView!
+    @IBOutlet weak var textField: UITextField!
+    //    @IBOutlet weak var textField: UITextView!
     
 //    @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        textField.borderStyle = UITextBorderStyle.roundedRect
+
     }
     
     @IBOutlet weak var textLabel: UILabel!

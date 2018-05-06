@@ -1,5 +1,5 @@
 //
-//  sadScreen.swift
+//  remindView.swift
 //  blue-test
 //
 //  Created by Celine Lee on 2018-05-06.
@@ -8,15 +8,12 @@
 
 import UIKit
 
-class sadScreen: UIViewController {
-   
-    @IBOutlet weak var textField: UITextField!
-    
+class remindView: UIViewController {
+
+    @IBOutlet weak var textField: UITextView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        textField.borderStyle = UITextBorderStyle.roundedRect
-
 
         // Do any additional setup after loading the view.
     }
